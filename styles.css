@@ -1,0 +1,165 @@
+.hr_line_title{
+    margin-top: 2%;
+}
+.hr_line_title hr {
+    border: none;
+    border-top: 3px double #333;
+    border-bottom: 1px solid #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 1px;
+}
+
+.hr_line_title hr:after {
+    background: #fff;
+    content: 'ΣΥΜΒΑΙΝΕΙ ΤΩΡΑ';
+  	border-radius: 100px;
+    margin-left: 280px;
+    padding: 10px 15px;
+    background-color: #707070;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    top: -11px;
+}
+
+.container,
+.secondary-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 950px;
+    margin-bottom: 30px;
+}
+
+aside.media{
+    width: 100%;
+    height: 220px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.news1,
+.news2{
+    margin-top: 30px;
+    width: 50%;
+}
+
+.news3,
+.news4{
+    width: 50%;
+}
+
+.news1,
+.news3{
+    margin-right: 30px;
+}
+
+.news_block{
+    position: relative;
+    background-color: #F0F0F0;
+    padding-left: 15px;
+    border-top: 1px solid red;
+    height: 220px;
+}
+
+.news_title p.category a{
+    color: red;
+    font-style: italic;
+}
+
+.news_title p.title{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.news_block .box_link {
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+}
+
+.news_block .news_title a {
+    pointer-events: all;
+    position:relative;
+}
+
+.text_bullet{
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: red solid 1px;
+    background: red; 
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    margin-right: 5px;
+}
+
+.sub_text{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.date_time{
+    color: #707070;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 0;
+}
+
+.dot{
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 6px;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background: #707070; 
+    margin-right: 5px;
+}
+
+/* ---------------------@media (max-width: 976px)--------------------- */
+@media (max-width: 976px) {
+    .container,
+    .secondary-container {
+      flex-direction: column;
+      width: auto;
+    }
+
+    aside.media{
+        height: auto;
+    }
+
+    .news1,
+    .news2,
+    .news3,
+    .news4{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .hr_line_title{
+        margin-top: 6%;
+    }
+
+    .hr_line_title hr:after {
+        margin-left: 0;
+    }
+
+    .date_time{
+        bottom: auto;
+    }
+}
