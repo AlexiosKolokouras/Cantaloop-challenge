@@ -1,0 +1,153 @@
+.hr_line_title{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.hr_line_title hr {
+    border: none;
+    border-top: 3px double #333;
+    border-bottom: 1px solid #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.hr_line_title hr:after {
+    background: #fff;
+    content: 'ΣΥΜΒΑΙΝΕΙ ΤΩΡΑ';
+  	border-radius: 100px;
+    padding: 10px 15px;
+    background-color: #707070;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    top: -11px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 950px;
+  }
+  
+  .left_news {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .right_news {
+    padding: 10px;
+    flex: 50%;
+  }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.news_block{
+    position: relative;
+    background-color: #F0F0F0;
+    border-top: 1px solid red;
+    padding: 0 18px 18px 18px;
+}
+
+aside.media{
+  font-size: 0;
+}
+
+.news_title p.category a{
+    color: red;
+    font-style: italic;
+}
+
+.news_title p.title{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.news_block .box_link {
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+}
+
+.news_block .news_title a {
+    pointer-events: all;
+    position:relative;
+}
+
+.text_bullet{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: red solid 1.5px;
+    background: red; 
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    margin-right: 5px;
+}
+
+.sub_text{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    min-height: 60px;
+    align-items: flex-end; 
+}
+
+.date_time{
+    color: #707070;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-left: 6px;
+}
+
+/* ---------------------@media (max-width: 800px)--------------------- */
+
+  @media (max-width: 800px) {
+    .right_news, .left_news {
+      flex: 100%;
+    }
+    .hr_line_title hr:after {
+      padding: 8px 12px;
+      font-size: 18px;
+  }
+  }
+
+  /* ---------------------@media (max-width: 967px)--------------------- */
+
+  @media (max-width: 967px) {
+    .container {
+        width: auto;
+      }
+
+    .hr_line_title{
+      margin-top: 4%;
+  }
+
+  .hr_line_title hr:after {
+      margin-left: 0;
+  }
+  }
+
+   /* ---------------------@media (max-width: 600px)--------------------- */
+
+  @media (max-width: 600px) {
+
+    .hr_line_title{
+      margin-top: 6%;
+  }
+  }
